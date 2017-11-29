@@ -17,23 +17,22 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/">Home</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="index.html">Home-1 Form</a>
-                        <li>
-                            <a href="home2.html">Home-2 Blog</a>
-                        </li>
-                        <li>
-                            <a href="home3.html">Home-3 Media</a>
-                        </li>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home-1 Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home2.html">Home-2 Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home3.html">Home-3 Media</a>
+                    </li>
                 </ul>
-
-                <button class="btn btn-danger navbar-btn">Don't Click the Red Button</button>
 
             </div>
             </div>
@@ -44,7 +43,8 @@
     <div class="container">
         <div class="container-fluid">
             <form action="http://formreflector.azurewebsites.net/form-reflector/">
-                <button type="submit">Submit</button>
+
+
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name">
@@ -53,6 +53,11 @@
                     <label for="exampleFormControlInput1">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
+                <div class="form-group">
+                    <label for="dateOfThing" class="form-label">When is the thing?</label>
+                    <input type="datetime-local" class="form-control" id="dateOfThing" name="date-of-thing">
+                </div>
+
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Week Dsy</label>
                     <select class="form-control" id="exampleFormControlSelect1">
@@ -73,30 +78,25 @@
                         <option>2 pm</option>
                     </select>
                 </div>
-              
+
                 <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> yes to use note 
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">no to use note 
-                        </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> yes to use note
+                    </label>
                 </div>
-            
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">no to use note
+                    </label>
+                </div>
+
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Addtional Notes</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                 </div>
-
+                <button class="btn btn-danger navbar-btn" type="submit">Submit</button>
             </form>
-
-            <!-- <div class="row">
-                <div class="col-md-6">Half Width Element</div>
-                <div class="col-md-6">Another Half Width Element</div>
-            </div> -->
 
             <main>
                 <article>
@@ -104,7 +104,6 @@
                         <img src="pic/smfa.png" class="img-circle" alt="Cinque Terre" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption class="figure-caption text-center">SMFAC</figcaption>
                     </figure>
-
                 </article>
 
             </main>
