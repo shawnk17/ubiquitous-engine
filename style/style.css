@@ -1,12 +1,16 @@
 body {
-    background-color: rgba(173, 217, 230, 0.575);
+    background-color: rgba(173, 218, 230, 0.274);
 }
 
 div {
     margin: 1rem 0;
 }
+.img-circle {
+    border-radius: 50%;
+}
 
-/* img {
-    height: auto;
-    max-width: auto;
-} */
+
+footer{
+    clear: both;
+    background-color:palegoldenrod;
+}

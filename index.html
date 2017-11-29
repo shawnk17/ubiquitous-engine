@@ -9,28 +9,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="shortcut icon" href="pic/favicon.ico">
+    <link rel="icon" type="image/gif" href="pic/animated_favicon1.gif">
 </head>
 
 <body>
     <header>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-          
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-   
-    </ul>
-</nav> -->
 
         <nav class="navbar navbar-light">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">SiteName</a>
+                    <a class="navbar-brand" href="/">Home</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active">
@@ -53,16 +42,53 @@
 
     <div class="container">
         <div class="container-fluid">
-            <div class="row">
+                <form action="http://formreflector.azurewebsites.net/form-reflector/">
+                    <button type="submit">Submit</button>
+                        <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Week Dsy</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Monday</option>
+                            <option>Tuedays</option>
+                            <option>Wensday</option>
+                            <option>Thursday</option>
+                            <option>Friday</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect2">Meeting times</label>
+                          <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>9 am</option>
+                            <option>10 am</option>
+                            <option>11 am</option>
+                            <option>1 pm</option>
+                            <option>2 pm</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Addtional Notes</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                        </div>
+                         
+                      </form>
+
+            <!-- <div class="row">
                 <div class="col-md-6">Half Width Element</div>
                 <div class="col-md-6">Another Half Width Element</div>
-            </div>
+            </div> -->
 
             <main>
                 <article>
-                    <!-- <img src="pic/smfa.png" class="img-fluid" alt="Responsive image"> -->
                     <figure class="figure">
-                        <img src="pic/smfa.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="pic/smfa.png" class="img-circle" alt="Cinque Terre" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption class="figure-caption text-center">SMFAC</figcaption>
                     </figure>
 
@@ -72,8 +98,8 @@
         </div>
     </div>
 
-    <footer>
-        @shawnvill.llc
+    <footer class="container">
+        &copy;2017-2018 Shawnville, LLC
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
