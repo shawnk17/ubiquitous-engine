@@ -13,6 +13,10 @@ div {
     border-radius: 50%;
 }
 
+.nounderline:hover {
+    text-decoration: none;
+}
+
 footer{
     clear: both;
     background-color:palegoldenrod;
